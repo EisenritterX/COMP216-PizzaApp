@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPaymentOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPaymentOptions" />
+
+        <RadioGroup
+            android:id="@+id/radg_payment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <RadioButton
+                android:id="@+id/radCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radCash" />
+
+            <RadioButton
+                android:id="@+id/radCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radCredit" />
+
+            <RadioButton
+                android:id="@+id/radDebit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radDebit" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCardNumber"
+            />
+
+        <EditText
+            android:id="@+id/txtCardNumInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/txtExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblExpiryDate" />
+
+        <EditText
+            android:id="@+id/edtExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPaymentNextClick"
+            android:text="Next" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

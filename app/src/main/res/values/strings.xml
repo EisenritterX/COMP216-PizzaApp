@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="btnOrder">ORDER</string>
+    <string name="_canadian">Canadian</string>
+    <string name="_chicken">Chicken Caesar</string>
+    <string name="_hawaiian">Hawaiian</string>
+    <string name="_bacon">Smokey Maple Bacon</string>
+    <string name="_veggie">Veggie Lovers</string>
+    <string name="_chkConfimation">Add this pizza to order,</string>
+    <string name="_btnCustomize">Customize</string>
+    <string name="rad_thin_crust">Thin Crust</string>
+    <string name="rad_thick_crust">Thick Crust</string>
+    <string name="txtPizzaSize">Please select the size of your pizza.</string>
+    <string name="txtCrust">Please select your preferred crust type.</string>
+    <string name="btnCheckout">Checkout</string>
+    <string name="btmPayment">Next</string>
+    <string name="txtPaymentOptions">Payment Options</string>
+    <string name="radDebit">Debit Card</string>
+    <string name="radCredit">Credit Card</string>
+    <string name="radCash">Cash</string>
+    <string name="txtCardNumber">Card Number</string>
+    <string name="lblExpiryDate">Expiry Date:</string>
+    <string name="lblFullName">Full Name:</string>
+    <string name="lblStreetName">Address:</string>
+    <string name="lblCityName">City:</string>
+    <string name="lblPostalCode">Postal Code:</string>
+    <string name="lblPhoneNumber">Phone Number:</string>
+    <string name="lblEmailAddress">Email Address:</string>
+    <string name="btnConfirmOrder">Confirm Order</string>
+    <string name="lblOrderConfirmation">Congratulations! Your order is on the way!</string>
+
+    <string-array name="pizzasizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra-Large</item>
+    </string-array>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblFullName" />
+
+            <EditText
+                android:id="@+id/editTxtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lblAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblStreetName" />
+
+            <EditText
+                android:id="@+id/editTextPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/lblCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblCityName" />
+
+            <EditText
+                android:id="@+id/editTextCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/lblPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblPostalCode" />
+
+            <EditText
+                android:id="@+id/editTextPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/lblPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblPhoneNumber" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/lblEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirmOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:onClick="onConfirmOrderClick"
+            android:text="@string/btnConfirmOrder" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

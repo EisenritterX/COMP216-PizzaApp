@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPizzaSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPizzaSize" />
+
+        <Spinner
+            android:id="@+id/spin_pizza_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pizzasizes" />
+
+        <TextView
+            android:id="@+id/txtCrust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCrust" />
+
+        <RadioGroup
+            android:id="@+id/radg_crust"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <RadioButton
+                android:id="@+id/rad_thin_crust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_thick_crust" />
+
+            <RadioButton
+                android:id="@+id/rad_thick_crust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_thin_crust" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_Checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckoutClick"
+            android:text="@string/btnCheckout" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
